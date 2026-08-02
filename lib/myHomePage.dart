@@ -118,17 +118,150 @@ class MyHomePage extends StatelessWidget{
                             ),
                           ),
                           child: Text("Message",style: TextStyle(fontWeight: FontWeight.bold),)),
-
                       ),
                     ],
                   )
-
-
                 ],
               ),
             ),
-          ],
 
+            SizedBox(height: 20,),
+            Row(
+              children: [
+                Expanded(child: Divider(
+                  color: Colors.grey, thickness: 1,
+                )),
+
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 12),
+                  child: Text(
+                    'Interests',
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff444444),
+                    ),
+                  ),
+                ),
+
+                Expanded(
+                  child: Divider(
+                    color: Colors.grey,
+                    thickness: 1,
+                  ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 12),
+
+            Row(
+              //crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+
+                Expanded(
+                  child: Card(
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Image.network(
+                            'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
+                            height: 85,
+                            width: double.infinity,
+                            fit: BoxFit.cover,
+
+                          ),
+
+                          const SizedBox(height: 8),
+
+                           Text(
+                            'Travel',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+
+                          const SizedBox(height: 5),
+
+                          const Text(
+                            'Exploring new places around the world',
+                            style: TextStyle(color: Colors.grey,),
+                          ),
+
+                          const SizedBox(height: 10),
+
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.white54,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+
+                              )
+                            ),
+                            child:  Text('View More', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)
+
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+
+                const SizedBox(width: 10),
+
+                Expanded(
+                  child: Card(
+                    child: Container(
+                      padding: EdgeInsets.all(10),
+                      child: Column(
+                        children: [
+
+                          Image.network(
+                            'https://images.unsplash.com/photo-1516035069371-29a1b244cc32',
+                            height: 85,
+                            width: double.infinity,
+                            fit: BoxFit.cover,
+
+                          ),
+
+                          const SizedBox(height: 8),
+
+                           Text(
+                            'Photography',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+
+                          const SizedBox(height: 5),
+
+                           Text(
+                            'Capturing moments through the lens', style: TextStyle(color: Colors.grey),
+                          ),
+
+                          const SizedBox(height: 10),
+
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.white54,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
+
+                                )
+                            ),
+                            child: const Text('View More', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
+          ],
         ),
       )
     );
