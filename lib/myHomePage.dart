@@ -54,18 +54,43 @@ class MyHomePage extends StatelessWidget{
                   Divider(),
                   const SizedBox(height: 5),
 
-                  Column(
+                  Row(
                     children: [
-                      Container(
-                        padding: EdgeInsets.only(left: 7),
-                        child: ListTile(
-                          leading: Icon(Icons.mail),
-                          title: Text("john.doe@example.com"),
+                      Icon(
+                        Icons.email,
+                        size: 18,
+                        color: Colors.black,
+                      ),
+                      SizedBox(width: 10),
+                      Text(
+                        'john.doe@example.com',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.black54,
                         ),
                       ),
-
                     ],
-                  )
+                  ),
+
+                  const SizedBox(height: 10),
+
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.phone,
+                        size: 18,
+                        color: Colors.black,
+                      ),
+                      SizedBox(width: 10),
+                      Text(
+                        '+123 456 7890',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.black54,
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
