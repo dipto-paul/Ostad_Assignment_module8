@@ -16,12 +16,12 @@ class MyHomePage extends StatelessWidget{
         elevation: 0,
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(9),
+        padding: EdgeInsets.all(10),
         child: Column(
           children: [
             Container( // nicher background design
               width: double.infinity,
-              padding: EdgeInsets.all(10),
+              padding: EdgeInsets.all(15),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16),
                 color: Colors.white,
@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget{
 
                   const Text("Flutter Developer", style: TextStyle(fontSize: 20, color: Colors.black38),),
                   SizedBox(height: 5,),
-                  const Text("Passionate about creating user-friendly and engaging digital experiences.", textAlign: TextAlign.center,style: TextStyle(fontSize: 16, color: Colors.black45),),
+                  const Text("Passionate about creating user-friendly and engaging digital experiences.", textAlign: TextAlign.center,style: TextStyle(fontSize: 16, color: Colors.black),),
 
                   const SizedBox(height: 18),
                   Divider(),
@@ -64,7 +64,7 @@ class MyHomePage extends StatelessWidget{
                         'john.doe@example.com',
                         style: TextStyle(
                           fontSize: 14,
-                          color: Colors.black54,
+                          color: Colors.black,
                         ),
                       ),
                     ],
@@ -84,7 +84,7 @@ class MyHomePage extends StatelessWidget{
                         '+123 456 7890',
                         style: TextStyle(
                           fontSize: 14,
-                          color: Colors.black54,
+                          color: Colors.black,
                         ),
                       ),
                     ],
@@ -104,13 +104,22 @@ class MyHomePage extends StatelessWidget{
 
                               ),
                             ),
-                            child: Text("Follow")
+                            child: Text("Follow",style: TextStyle(fontWeight: FontWeight.bold),)
                         ),
                       ),
 
                       const SizedBox(width: 10),
 
+                      Expanded(child: OutlinedButton(onPressed: (){},
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.black,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                          ),
+                          child: Text("Message",style: TextStyle(fontWeight: FontWeight.bold),)),
 
+                      ),
                     ],
                   )
 
