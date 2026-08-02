@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget{
@@ -161,15 +161,19 @@ class MyHomePage extends StatelessWidget{
 
                 Expanded(
                   child: Card(
-                    child: Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+
                       child: Column(
                         children: [
-                          Image.network(
-                            'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
-                            height: 85,
-                            width: double.infinity,
-                            fit: BoxFit.cover,
-
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(7),
+                            child: Image.network(
+                              'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
+                              height: 85,
+                              width: double.infinity,
+                              fit: BoxFit.cover,
+                            ),
                           ),
 
                           const SizedBox(height: 8),
@@ -213,17 +217,20 @@ class MyHomePage extends StatelessWidget{
 
                 Expanded(
                   child: Card(
-                    child: Container(
-                      padding: EdgeInsets.all(10),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
                       child: Column(
                         children: [
 
-                          Image.network(
-                            'https://images.unsplash.com/photo-1516035069371-29a1b244cc32',
-                            height: 85,
-                            width: double.infinity,
-                            fit: BoxFit.cover,
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(7),
+                            child: Image.network(
+                              'https://images.unsplash.com/photo-1516035069371-29a1b244cc32',
+                              height: 85,
+                              width: double.infinity,
+                              fit: BoxFit.cover,
 
+                            ),
                           ),
 
                           const SizedBox(height: 8),
