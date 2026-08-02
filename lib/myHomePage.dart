@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -91,6 +89,32 @@ class MyHomePage extends StatelessWidget{
                       ),
                     ],
                   ),
+
+                  const SizedBox(height: 15),
+
+                  Row(
+                    children: [
+                      Expanded(
+                        child: ElevatedButton(onPressed: (){},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.blue,
+                              foregroundColor: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
+
+                              ),
+                            ),
+                            child: Text("Follow")
+                        ),
+                      ),
+
+                      const SizedBox(width: 10),
+
+
+                    ],
+                  )
+
+
                 ],
               ),
             ),
